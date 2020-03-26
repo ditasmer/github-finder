@@ -9,9 +9,17 @@ const Navbar = ({ icon, title }) =>{
                     {/* <i className={props.icon} /> {props.title} */}
                     <i className={icon} /> {title}
                 </h1>  
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about">About</a>
+                    </li>
+                </ul>
             </nav>
         );
-}
+};
 
 Navbar.defaultProps = {
     title: 'Github Finder',
