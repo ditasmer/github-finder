@@ -34,17 +34,29 @@ static propTypes = {
 
         if(loading) return <Spinner />;
 
-        return <Fragment>
+        return (
+          <Fragment>
             <Link to='/' className='btn btn-light'>
-                Back To Search
+              Back To Search
             </Link>
-            Hireable:{' '}
+            Hireable:{" "}
             {hireable ? (
-                <i className="fas fa-check text-success" /> 
-            ) : ( 
-                <i className="fas fa-times-circle text-danger" /> 
+              <i className='fas fa-check text-success' />
+            ) : (
+              <i className='fas fa-times-circle text-danger' />
             )}
-        </Fragment>;
+            <div className='card grid-2'>
+              <div className='all-center'>
+                <img 
+                src={avatar_url} 
+                className='round-img' 
+                alt='' 
+                style={{ width: '150px' }} 
+                />
+              </div>
+            </div>
+          </Fragment>
+        );
     }
 }
 
