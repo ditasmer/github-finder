@@ -7,6 +7,9 @@ import Search from './components/users/Search';
 import Alert from './components/layout/Alert';
 import About from './components/pages/About';
 import axios from 'axios';
+
+import GithubState from './context/github/githubState';
+
 import './App.css';
 
 const App = () => {
@@ -77,6 +80,7 @@ const showAlert = (msg, type) => {
 };
 
     return (
+      <GithubState>
       <Router>
       <div className='App'>
         <Navbar />   
@@ -118,6 +122,7 @@ const showAlert = (msg, type) => {
         </div>
       </div>
       </Router>
+      </GithubState>
     );
 }
 
