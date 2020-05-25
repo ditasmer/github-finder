@@ -1,3 +1,7 @@
+L30. Create Reducer & Actions
+Clean code
+Search users like an action
+
 L29: Implementing Context
 Hooks with context and reducer to clean code
 Create new folder context/github
